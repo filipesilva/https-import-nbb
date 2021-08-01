@@ -1,0 +1,14 @@
+{
+  "name": "https-import-nbb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "script-node": "node --experimental-loader ./https-loader.mjs ./script.mjs",
+    "script-nbb": "node --experimental-loader ./https-loader.mjs ./node_modules/.bin/nbb script.cljs",
+    "script-nbb-transpile": "node --experimental-loader ./https-loader.mjs --experimental-loader ./cljs-loader.mjs ./script.mjs"
+  },
+  "dependencies": {
+    "nbb": "^0.0.8"
+  }
+}
